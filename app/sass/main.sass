@@ -1,0 +1,207 @@
+$grey: #777
+
+a
+  text-decoration: none
+  
+a:link,
+a:visited,
+a:hover,
+a:active
+  color: #fff
+  
+li
+  list-style-type: none
+
+.container
+  width: 1170px
+  margin: 0 auto
+
+.top
+  min-width: 1170px
+  height: 40px
+  margin: 0 auto
+  background-color: #191919
+
+  .social
+    display: inline-block
+    width: 170px
+    height: 40px
+
+    a
+      display: inline-block
+      width: 25px
+      height: 40px
+      margin-left: 5px
+      background:
+        image: url("../../img/social-sprite.png")
+        repeat: no-repeat
+
+    .twitter
+      background-position: -3px -3px
+
+    .facebook
+      background-position: -30px -5px
+
+    .google
+      background-position: -60px -4px
+
+    .dribble
+      background-position: -88px -4px
+
+    .pinterest
+      background-position: -122px -4px
+
+  .sign-in,
+  .lang
+    float: right
+    display: inline-block
+    margin:
+      top: 13px
+      right: 5px
+    font:
+      family: 'Montserrat-Regular'
+      size: 16px
+    color: $grey
+
+  .sign-in
+    padding-right: 5px
+    border-right: 2px solid $grey
+
+header
+  min-width: 1170px
+  height: 800px
+  background-image: url('../../img/bg.jpg')
+
+  .logo
+    float: left
+    display: inline-block
+    margin-top: 20px
+    font:
+      family: 'Montserrat-Bold'
+      size: 24px
+      weight: 600
+    color: #fff
+
+  nav
+    display: inline-block
+    margin:
+      top: 25px
+      left: 125px
+
+    ul
+      height: 0
+      display: inline-block
+      margin: 0
+      padding: 0
+
+      li
+        position: relative
+        display: inline-block
+        margin-right: 50px
+        font:
+          family: 'Montserrat-Bold'
+          size: 14px
+          weight: 600
+        color: #fff
+
+        &:hover
+          padding-bottom: 20px
+          border-bottom: 4px solid #ff4081
+
+        a
+          .material-icons
+            position: absolute
+            top: -3px
+            right: -28px
+
+  .nav-icons
+    float: right
+    width: 115px
+    height: 25px
+    margin-top: 22px
+    color: #fff
+    cursor: pointer
+
+    i
+      padding-right: 10px
+      border-right: 1px solid $grey
+
+      &:last-child
+        border-right: none
+
+  article
+    margin-top: 235px
+    text-align: center
+
+    .tag
+      display: inline-block
+
+      font:
+        family: 'Montserrat-Regular'
+        size: 20px
+      color: $grey
+
+    h1
+      margin: 15px 0 30px 0
+      font:
+        family: 'Montserrat-Black'
+        size: 46px
+      text-transform: uppercase
+      color: #fff
+      
+    .button
+      display: inline-block
+      padding: 10px 20px 10px 20px
+      font:
+        family: 'Montserrat-Regular'
+        size: 20px
+      border-radius: 25px
+      background-color: #303f9f
+
+  .info
+    text-align: center
+
+    .avatar
+      margin: 80px auto 0 auto
+      width: 60px
+      height: 60px
+      background-image: url('../../img/avatar.png')
+
+    .name,
+    .date,
+    .comments,
+    .likes,
+    .material-icons
+      color: $grey
+
+    .name
+      display: block
+      margin-top: 20px
+      font:
+        family: 'Montserrat-Bold'
+        size: 14px
+      color: #fff
+
+    .date
+      display: block
+      margin-top: 15px
+      font:
+        family: 'Montserrat-Regular'
+        size: 12px
+
+    .comments,
+    .likes
+      display: inline-block
+      margin-top: 35px
+      font:
+        family: 'Montserrat-Regular'
+        size: 12px
+
+    .material-icons
+      font-size: 14px
+
+    .comments
+        margin-right: 30px
+
+
+

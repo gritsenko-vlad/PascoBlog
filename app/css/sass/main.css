@@ -1,0 +1,158 @@
+a {
+  text-decoration: none; }
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+  color: #fff; }
+
+li {
+  list-style-type: none; }
+
+.container {
+  width: 1170px;
+  margin: 0 auto; }
+
+.top {
+  min-width: 1170px;
+  height: 40px;
+  margin: 0 auto;
+  background-color: #191919; }
+  .top .social {
+    display: inline-block;
+    width: 170px;
+    height: 40px; }
+    .top .social a {
+      display: inline-block;
+      width: 25px;
+      height: 40px;
+      margin-left: 5px;
+      background-image: url("../../img/social-sprite.png");
+      background-repeat: no-repeat; }
+    .top .social .twitter {
+      background-position: -3px -3px; }
+    .top .social .facebook {
+      background-position: -30px -5px; }
+    .top .social .google {
+      background-position: -60px -4px; }
+    .top .social .dribble {
+      background-position: -88px -4px; }
+    .top .social .pinterest {
+      background-position: -122px -4px; }
+  .top .sign-in,
+  .top .lang {
+    float: right;
+    display: inline-block;
+    margin-top: 13px;
+    margin-right: 5px;
+    font-family: 'Montserrat-Regular';
+    font-size: 16px;
+    color: #777; }
+  .top .sign-in {
+    padding-right: 5px;
+    border-right: 2px solid #777; }
+
+header {
+  min-width: 1170px;
+  height: 800px;
+  background-image: url("../../img/bg.jpg"); }
+  header .logo {
+    float: left;
+    display: inline-block;
+    margin-top: 20px;
+    font-family: 'Montserrat-Bold';
+    font-size: 24px;
+    font-weight: 600;
+    color: #fff; }
+  header nav {
+    display: inline-block;
+    margin-top: 25px;
+    margin-left: 125px; }
+    header nav ul {
+      height: 0;
+      display: inline-block;
+      margin: 0;
+      padding: 0; }
+      header nav ul li {
+        position: relative;
+        display: inline-block;
+        margin-right: 50px;
+        font-family: 'Montserrat-Bold';
+        font-size: 14px;
+        font-weight: 600;
+        color: #fff; }
+        header nav ul li:hover {
+          padding-bottom: 20px;
+          border-bottom: 4px solid #ff4081; }
+        header nav ul li a .material-icons {
+          position: absolute;
+          top: -3px;
+          right: -28px; }
+  header .nav-icons {
+    float: right;
+    width: 115px;
+    height: 25px;
+    margin-top: 22px;
+    color: #fff;
+    cursor: pointer; }
+    header .nav-icons i {
+      padding-right: 10px;
+      border-right: 1px solid #777; }
+      header .nav-icons i:last-child {
+        border-right: none; }
+  header article {
+    margin-top: 235px;
+    text-align: center; }
+    header article .tag {
+      display: inline-block;
+      font-family: 'Montserrat-Regular';
+      font-size: 20px;
+      color: #777; }
+    header article h1 {
+      margin: 15px 0 30px 0;
+      font-family: 'Montserrat-Black';
+      font-size: 46px;
+      text-transform: uppercase;
+      color: #fff; }
+    header article .button {
+      display: inline-block;
+      padding: 10px 20px 10px 20px;
+      font-family: 'Montserrat-Regular';
+      font-size: 20px;
+      border-radius: 25px;
+      background-color: #303f9f; }
+  header .info {
+    text-align: center; }
+    header .info .avatar {
+      margin: 80px auto 0 auto;
+      width: 60px;
+      height: 60px;
+      background-image: url("../../img/avatar.png"); }
+    header .info .name,
+    header .info .date,
+    header .info .comments,
+    header .info .likes,
+    header .info .material-icons {
+      color: #777; }
+    header .info .name {
+      display: block;
+      margin-top: 20px;
+      font-family: 'Montserrat-Bold';
+      font-size: 14px;
+      color: #fff; }
+    header .info .date {
+      display: block;
+      margin-top: 15px;
+      font-family: 'Montserrat-Regular';
+      font-size: 12px; }
+    header .info .comments,
+    header .info .likes {
+      display: inline-block;
+      margin-top: 35px;
+      font-family: 'Montserrat-Regular';
+      font-size: 12px; }
+    header .info .material-icons {
+      font-size: 14px; }
+    header .info .comments {
+      margin-right: 30px; }
