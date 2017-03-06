@@ -1,5 +1,62 @@
 $grey: #777
+@mixin content-descr-h3
+  margin-left: 20px
+  font:
+    family: 'Montserrat-Bold'
+    size: 18px
 
+@mixin content-descr-p
+  margin-left: 20px
+  font:
+    family: 'Open Sans'
+  color: $grey
+
+@mixin content-descr-avatar($url)
+  float: left
+  width: 50px
+  height: 50px
+  margin: 0 5px 0 15px
+  border-radius: 25px
+  background-image: url($url)
+
+@mixin content-descr-name
+  display: block
+  font:
+    family: 'Montserrat-Regular'
+    size: 14px
+  color: #000
+
+@mixin content-descr-date
+  font:
+    family: 'Montserrat-Regular'
+    size: 12px
+  color: $grey
+
+@mixin content-img-sign
+  position: absolute
+  bottom: 20px
+  left: 20px
+  font:
+    family: 'Montserrat-Regular'
+    size: 16px
+  color: #fff
+
+@mixin content-icons
+  position: absolute
+  display: inline-block
+  bottom: 20px
+  right: 20px
+  margin-top: 35px
+  font:
+    family: 'Montserrat-Regular'
+    size: 12px
+  color: #fff
+
+@mixin content-icons-pos
+  position: absolute
+  bottom: 0
+  right: 15px
+  font-size: 14px
 a
   text-decoration: none
   
@@ -70,7 +127,7 @@ li
 header
   min-width: 1170px
   height: 800px
-  background-image: url('../../img/bg.jpg')
+  background: url('../../img/bg.jpg')
 
   .logo
     float: left
@@ -203,5 +260,147 @@ header
     .comments
         margin-right: 30px
 
+.menu-blog
+  min-width: 1170px
+  margin-top: 30px
+  padding-bottom: 30px
+  border-bottom: 2px solid #ddd
+  span
+    font:
+      family: 'Montserrat-Bold'
+      size: 16px
+  a
+    padding: 10px 30px 10px 30px
+    margin-right: 5px
+    font:
+      family: 'Montserrat-Regular'
+      size: 16px
+    
+    color: #000
+
+    &:hover
+      padding: 9px 29px 9px 29px
+      border: 1px solid #3f51b5
+      border-radius: 25px
+      color: #3f51b5
+
+.big-content-block
+  width: 820px
+  height: 605px
+  margin: 35px 0 20px 0
+  border: 1px solid #dddddd
+  border-radius: 5px
+
+  .image
+    position: relative
+    width: 820px
+    height: 420px
+    background-image: url('../../img/bg-content.jpg')
+    
+    .play
+      position: absolute
+      top: 185px
+      left: 385px
+      color: #fff
+      font-size: 50px
+
+    .sign
+      @include content-img-sign
+
+    .comments,
+    .likes
+      @include content-icons
+
+      .material-icons
+        @include content-icons-pos
+
+    .comments
+      margin-right: 50px
+
+  .description
+
+    h3
+      @include content-descr-h3
+
+    p
+      @include content-descr-p
+
+    .info
+      width: 100%
+      height: 50px
+      padding-top: 15px
+      border-top: 1px solid #dddddd
+
+      .avatar
+        @include content-descr-avatar('../../img/avatar-content.png')
+
+      .name
+        @include content-descr-name
+
+      .date
+        @include content-descr-date
+
+      .dots
+        margin-left: 595px
+        cursor: pointer
+
+.md-content-block
+  width: 820px
+  height: 165px
+  margin: 35px 0 20px 0
+  border: 1px solid #dddddd
+  border-radius: 5px
+
+  .image
+    float: left
+    display: inline-block
+    position: relative
+    width: 260px
+    height: 165px
+    background-image: url('../../img/bg-content1.jpg')
+
+    .sign
+      @include content-img-sign
+
+    .comments,
+    .likes
+      @include content-icons
+
+      .material-icons
+        @include content-icons-pos
+
+    .comments
+      margin-right: 50px
+
+  .description
+    float: right
+    width: 560px
+    height: 100%
+
+    h3
+      @include content-descr-h3
+      margin: 5px 0 0 20px
+
+    p
+      @include content-descr-p
+
+    .info
+      width: 100%
+      height: 50px
+      padding-top: 10px
+      border-top: 1px solid #dddddd
+
+      .avatar
+        @include content-descr-avatar('../../img/avatar-content1.png')
+
+      .name
+        @include content-descr-name
+
+      .date
+        @include content-descr-date
+
+      .dots
+        margin-left: 335px
+        cursor: pointer
 
 
