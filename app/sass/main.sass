@@ -11,13 +11,12 @@ $grey: #777
     family: 'Open Sans'
   color: $grey
 
-@mixin content-descr-avatar($url)
+@mixin content-descr-avatar()
   float: left
   width: 50px
   height: 50px
   margin: 0 5px 0 15px
   border-radius: 25px
-  background-image: url($url)
 
 @mixin content-descr-name
   display: block
@@ -33,30 +32,20 @@ $grey: #777
   color: $grey
 
 @mixin content-img-sign
-  position: absolute
-  bottom: 20px
-  left: 20px
   font:
     family: 'Montserrat-Regular'
     size: 16px
   color: #fff
 
 @mixin content-icons
-  position: absolute
   display: inline-block
-  bottom: 20px
-  right: 20px
   margin-top: 35px
   font:
     family: 'Montserrat-Regular'
     size: 12px
   color: #fff
 
-@mixin content-icons-pos
-  position: absolute
-  bottom: 0
-  right: 15px
-  font-size: 14px
+
 a
   text-decoration: none
   
@@ -284,7 +273,7 @@ header
       border-radius: 25px
       color: #3f51b5
 
-.big-content-block
+.video-content-block
   width: 820px
   height: 605px
   margin: 35px 0 20px 0
@@ -295,8 +284,7 @@ header
     position: relative
     width: 820px
     height: 420px
-    background-image: url('../../img/bg-content.jpg')
-    
+
     .play
       position: absolute
       top: 185px
@@ -305,14 +293,23 @@ header
       font-size: 50px
 
     .sign
+      position: absolute
+      bottom: 20px
+      left: 20px
       @include content-img-sign
 
     .comments,
     .likes
+      position: absolute
+      bottom: 20px
+      right: 20px
       @include content-icons
 
       .material-icons
-        @include content-icons-pos
+        position: absolute
+        bottom: 0
+        right: 15px
+        font-size: 14px
 
     .comments
       margin-right: 50px
@@ -332,7 +329,7 @@ header
       border-top: 1px solid #dddddd
 
       .avatar
-        @include content-descr-avatar('../../img/avatar-content.png')
+        @include content-descr-avatar
 
       .name
         @include content-descr-name
@@ -344,7 +341,7 @@ header
         margin-left: 595px
         cursor: pointer
 
-.md-content-block
+.horiz-content-block
   width: 820px
   height: 165px
   margin: 35px 0 20px 0
@@ -353,21 +350,37 @@ header
 
   .image
     float: left
-    display: inline-block
     position: relative
     width: 260px
     height: 165px
-    background-image: url('../../img/bg-content1.jpg')
+    margin: 0
+
+    img
+      position: absolute
+      display: inline-block
+      width: 260px
+      height: 165px
+      z-index: 0
 
     .sign
+      position: absolute
+      top: 140px
+      left: 20px
+
       @include content-img-sign
 
     .comments,
     .likes
+      position: absolute
+      bottom: 10px
+      right: 20px
       @include content-icons
 
       .material-icons
-        @include content-icons-pos
+        position: absolute
+        bottom: 0
+        right: 15px
+        font-size: 14px
 
     .comments
       margin-right: 50px
@@ -391,7 +404,7 @@ header
       border-top: 1px solid #dddddd
 
       .avatar
-        @include content-descr-avatar('../../img/avatar-content1.png')
+        @include content-descr-avatar
 
       .name
         @include content-descr-name
@@ -402,5 +415,3 @@ header
       .dots
         margin-left: 335px
         cursor: pointer
-
-

@@ -177,153 +177,155 @@ header {
       border-radius: 25px;
       color: #3f51b5; }
 
-.big-content-block {
+.video-content-block {
   width: 820px;
   height: 605px;
   margin: 35px 0 20px 0;
   border: 1px solid #dddddd;
   border-radius: 5px; }
-  .big-content-block .image {
+  .video-content-block .image {
     position: relative;
     width: 820px;
-    height: 420px;
-    background-image: url("../../img/bg-content.jpg"); }
-    .big-content-block .image .play {
+    height: 420px; }
+    .video-content-block .image .play {
       position: absolute;
       top: 185px;
       left: 385px;
       color: #fff;
       font-size: 50px; }
-    .big-content-block .image .sign {
+    .video-content-block .image .sign {
       position: absolute;
       bottom: 20px;
       left: 20px;
       font-family: 'Montserrat-Regular';
       font-size: 16px;
       color: #fff; }
-    .big-content-block .image .comments,
-    .big-content-block .image .likes {
+    .video-content-block .image .comments,
+    .video-content-block .image .likes {
       position: absolute;
-      display: inline-block;
       bottom: 20px;
       right: 20px;
+      display: inline-block;
       margin-top: 35px;
       font-family: 'Montserrat-Regular';
       font-size: 12px;
       color: #fff; }
-      .big-content-block .image .comments .material-icons,
-      .big-content-block .image .likes .material-icons {
+      .video-content-block .image .comments .material-icons,
+      .video-content-block .image .likes .material-icons {
         position: absolute;
         bottom: 0;
         right: 15px;
         font-size: 14px; }
-    .big-content-block .image .comments {
+    .video-content-block .image .comments {
       margin-right: 50px; }
-  .big-content-block .description h3 {
+  .video-content-block .description h3 {
     margin-left: 20px;
     font-family: 'Montserrat-Bold';
     font-size: 18px; }
-  .big-content-block .description p {
+  .video-content-block .description p {
     margin-left: 20px;
     font-family: 'Open Sans';
     color: #777; }
-  .big-content-block .description .info {
+  .video-content-block .description .info {
     width: 100%;
     height: 50px;
     padding-top: 15px;
     border-top: 1px solid #dddddd; }
-    .big-content-block .description .info .avatar {
+    .video-content-block .description .info .avatar {
       float: left;
       width: 50px;
       height: 50px;
       margin: 0 5px 0 15px;
-      border-radius: 25px;
-      background-image: url("../../img/avatar-content.png"); }
-    .big-content-block .description .info .name {
+      border-radius: 25px; }
+    .video-content-block .description .info .name {
       display: block;
       font-family: 'Montserrat-Regular';
       font-size: 14px;
       color: #000; }
-    .big-content-block .description .info .date {
+    .video-content-block .description .info .date {
       font-family: 'Montserrat-Regular';
       font-size: 12px;
       color: #777; }
-    .big-content-block .description .info .dots {
+    .video-content-block .description .info .dots {
       margin-left: 595px;
       cursor: pointer; }
 
-.md-content-block {
+.horiz-content-block {
   width: 820px;
   height: 165px;
   margin: 35px 0 20px 0;
   border: 1px solid #dddddd;
   border-radius: 5px; }
-  .md-content-block .image {
+  .horiz-content-block .image {
     float: left;
-    display: inline-block;
     position: relative;
     width: 260px;
     height: 165px;
-    background-image: url("../../img/bg-content1.jpg"); }
-    .md-content-block .image .sign {
+    margin: 0; }
+    .horiz-content-block .image img {
       position: absolute;
-      bottom: 20px;
+      display: inline-block;
+      width: 260px;
+      height: 165px;
+      z-index: 0; }
+    .horiz-content-block .image .sign {
+      position: absolute;
+      top: 140px;
       left: 20px;
       font-family: 'Montserrat-Regular';
       font-size: 16px;
       color: #fff; }
-    .md-content-block .image .comments,
-    .md-content-block .image .likes {
+    .horiz-content-block .image .comments,
+    .horiz-content-block .image .likes {
       position: absolute;
-      display: inline-block;
-      bottom: 20px;
+      bottom: 10px;
       right: 20px;
+      display: inline-block;
       margin-top: 35px;
       font-family: 'Montserrat-Regular';
       font-size: 12px;
       color: #fff; }
-      .md-content-block .image .comments .material-icons,
-      .md-content-block .image .likes .material-icons {
+      .horiz-content-block .image .comments .material-icons,
+      .horiz-content-block .image .likes .material-icons {
         position: absolute;
         bottom: 0;
         right: 15px;
         font-size: 14px; }
-    .md-content-block .image .comments {
+    .horiz-content-block .image .comments {
       margin-right: 50px; }
-  .md-content-block .description {
+  .horiz-content-block .description {
     float: right;
     width: 560px;
     height: 100%; }
-    .md-content-block .description h3 {
+    .horiz-content-block .description h3 {
       margin-left: 20px;
       font-family: 'Montserrat-Bold';
       font-size: 18px;
       margin: 5px 0 0 20px; }
-    .md-content-block .description p {
+    .horiz-content-block .description p {
       margin-left: 20px;
       font-family: 'Open Sans';
       color: #777; }
-    .md-content-block .description .info {
+    .horiz-content-block .description .info {
       width: 100%;
       height: 50px;
       padding-top: 10px;
       border-top: 1px solid #dddddd; }
-      .md-content-block .description .info .avatar {
+      .horiz-content-block .description .info .avatar {
         float: left;
         width: 50px;
         height: 50px;
         margin: 0 5px 0 15px;
-        border-radius: 25px;
-        background-image: url("../../img/avatar-content1.png"); }
-      .md-content-block .description .info .name {
+        border-radius: 25px; }
+      .horiz-content-block .description .info .name {
         display: block;
         font-family: 'Montserrat-Regular';
         font-size: 14px;
         color: #000; }
-      .md-content-block .description .info .date {
+      .horiz-content-block .description .info .date {
         font-family: 'Montserrat-Regular';
         font-size: 12px;
         color: #777; }
-      .md-content-block .description .info .dots {
+      .horiz-content-block .description .info .dots {
         margin-left: 335px;
         cursor: pointer; }
