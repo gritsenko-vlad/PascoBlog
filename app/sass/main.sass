@@ -11,7 +11,7 @@ $grey: #777
     family: 'Open Sans'
   color: $grey
 
-@mixin content-descr-avatar()
+@mixin content-descr-avatar
   float: left
   width: 50px
   height: 50px
@@ -61,6 +61,9 @@ li
 .container
   width: 1170px
   margin: 0 auto
+
+
+
 
 .top
   min-width: 1170px
@@ -273,7 +276,14 @@ header
       border-radius: 25px
       color: #3f51b5
 
-.video-content-block
+.main-content
+  &:after
+    content: "."
+    display: block
+    height: 0
+    clear: both
+    visibility: hidden
+.video-block
   width: 820px
   height: 605px
   margin: 35px 0 20px 0
@@ -341,9 +351,9 @@ header
         margin-left: 595px
         cursor: pointer
 
-.horiz-content-block
+.horiz-block
   width: 820px
-  height: 165px
+  min-height: 165px
   margin: 35px 0 20px 0
   border: 1px solid #dddddd
   border-radius: 5px
@@ -358,7 +368,7 @@ header
     img
       position: absolute
       display: inline-block
-      width: 260px
+      width: 100%
       height: 165px
       z-index: 0
 
@@ -392,14 +402,21 @@ header
 
     h3
       @include content-descr-h3
-      margin: 5px 0 0 20px
+      margin: 5px 5px 0 20px
 
     p
       @include content-descr-p
+      height: 16px*1.4*1
+      font-size: 16px
+      line-height: 1.4
+      -webkit-line-clamp: 1
+      -webkit-box-orient: vertical
+      overflow: hidden
+      text-overflow: ellipsis
 
     .info
       width: 100%
-      height: 50px
+      min-height: 50px
       padding-top: 10px
       border-top: 1px solid #dddddd
 
@@ -415,3 +432,199 @@ header
       .dots
         margin-left: 335px
         cursor: pointer
+
+.vert-block
+  float: left
+  width: 260px
+  height: 430px
+  border: 1px solid #dddddd
+  border-radius: 5px
+
+  &:nth-child(6),
+  &:nth-child(7)
+    margin-left: 18px
+
+  .image
+    position: relative
+    width: 100%
+    height: 175px
+    margin: 0
+
+    img
+      position: absolute
+      display: inline-block
+      width: 100%
+      height: 100%
+      z-index: 0
+
+    .sign
+      position: absolute
+      top: 150px
+      left: 20px
+
+      @include content-img-sign
+
+    .comments,
+    .likes
+      position: absolute
+      bottom: 10px
+      right: 20px
+      @include content-icons
+
+      .material-icons
+        position: absolute
+        bottom: 0
+        right: 20px
+        font-size: 14px
+
+
+    .comments
+      margin-right: 50px
+
+  .description
+    width: 100%
+    height: 175px
+
+    h3
+      @include content-descr-h3
+      padding-right: 5px
+
+    p
+      @include content-descr-p
+      height: 16px*1.4*3
+      font-size: 16px
+      line-height: 1.4
+      -webkit-line-clamp: 3
+      -webkit-box-orient: vertical
+      overflow: hidden
+      text-overflow: ellipsis
+
+  .info
+    width: 100%
+    min-height: 50px
+    padding-top: 10px
+    border-top: 1px solid #dddddd
+
+    .avatar
+      @include content-descr-avatar
+
+    .name
+      @include content-descr-name
+
+    .date
+      @include content-descr-date
+
+    .dots
+      margin-left: 40px
+      cursor: pointer
+
+.big-vert-block
+  float: left
+  width: 400px
+  min-height: 540px
+  margin-top: 20px
+  border: 1px solid #dddddd
+  border-radius: 5px
+
+  &:nth-child(8)
+    margin-right: 20px
+
+  .image
+    position: relative
+    width: 400px
+    height: 300px
+    margin: 0
+
+    img
+      position: absolute
+      display: inline-block
+      width: 100%
+      height: 100%
+      z-index: 0
+
+    .sign
+      position: absolute
+      top: 270px
+      left: 20px
+
+      @include content-img-sign
+
+    .comments,
+    .likes
+      position: absolute
+      bottom: 10px
+      right: 20px
+      @include content-icons
+
+      .material-icons
+        position: absolute
+        bottom: 0
+        right: 20px
+        font-size: 14px
+
+
+    .comments
+      margin-right: 50px
+
+  .description
+    width: 400px
+    min-height: 140px
+
+    h3
+      @include content-descr-h3
+
+    p
+      @include content-descr-p
+      height: 16px*1.4*5
+      font-size: 16px
+      line-height: 1.4
+      -webkit-line-clamp: 5
+      -webkit-box-orient: vertical
+      overflow: hidden
+      text-overflow: ellipsis
+
+    .info
+      width: 100%
+      min-height: 50px
+      padding-top: 10px
+      border-top: 1px solid #dddddd
+
+      .avatar
+        @include content-descr-avatar
+
+      .name
+        @include content-descr-name
+
+      .date
+        @include content-descr-date
+
+      .dots
+        margin-left: 170px
+        cursor: pointer
+
+.next-btn-wrap
+  float: right
+  margin-top: 30px
+  margin-right: 345px
+  a
+    font:
+      family: 'Montserrat-Regular'
+      size: 16px
+    color: #303f9f
+
+  .next-btn
+    display: inline-block
+    width: 30px
+    height: 30px
+    margin-left: 10px
+    line-height: 20px
+    background-color: #fff
+    border-top: 1px solid lighten( $grey, 40% )
+    border-bottom: 1px solid $grey
+    border-radius: 25px
+    text-align: center
+    vertical-align: middle
+
+    i
+      font-size: 22px
+      line-height: 28px

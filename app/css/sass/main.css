@@ -177,31 +177,38 @@ header {
       border-radius: 25px;
       color: #3f51b5; }
 
-.video-content-block {
+.main-content:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden; }
+
+.video-block {
   width: 820px;
   height: 605px;
   margin: 35px 0 20px 0;
   border: 1px solid #dddddd;
   border-radius: 5px; }
-  .video-content-block .image {
+  .video-block .image {
     position: relative;
     width: 820px;
     height: 420px; }
-    .video-content-block .image .play {
+    .video-block .image .play {
       position: absolute;
       top: 185px;
       left: 385px;
       color: #fff;
       font-size: 50px; }
-    .video-content-block .image .sign {
+    .video-block .image .sign {
       position: absolute;
       bottom: 20px;
       left: 20px;
       font-family: 'Montserrat-Regular';
       font-size: 16px;
       color: #fff; }
-    .video-content-block .image .comments,
-    .video-content-block .image .likes {
+    .video-block .image .comments,
+    .video-block .image .likes {
       position: absolute;
       bottom: 20px;
       right: 20px;
@@ -210,73 +217,73 @@ header {
       font-family: 'Montserrat-Regular';
       font-size: 12px;
       color: #fff; }
-      .video-content-block .image .comments .material-icons,
-      .video-content-block .image .likes .material-icons {
+      .video-block .image .comments .material-icons,
+      .video-block .image .likes .material-icons {
         position: absolute;
         bottom: 0;
         right: 15px;
         font-size: 14px; }
-    .video-content-block .image .comments {
+    .video-block .image .comments {
       margin-right: 50px; }
-  .video-content-block .description h3 {
+  .video-block .description h3 {
     margin-left: 20px;
     font-family: 'Montserrat-Bold';
     font-size: 18px; }
-  .video-content-block .description p {
+  .video-block .description p {
     margin-left: 20px;
     font-family: 'Open Sans';
     color: #777; }
-  .video-content-block .description .info {
+  .video-block .description .info {
     width: 100%;
     height: 50px;
     padding-top: 15px;
     border-top: 1px solid #dddddd; }
-    .video-content-block .description .info .avatar {
+    .video-block .description .info .avatar {
       float: left;
       width: 50px;
       height: 50px;
       margin: 0 5px 0 15px;
       border-radius: 25px; }
-    .video-content-block .description .info .name {
+    .video-block .description .info .name {
       display: block;
       font-family: 'Montserrat-Regular';
       font-size: 14px;
       color: #000; }
-    .video-content-block .description .info .date {
+    .video-block .description .info .date {
       font-family: 'Montserrat-Regular';
       font-size: 12px;
       color: #777; }
-    .video-content-block .description .info .dots {
+    .video-block .description .info .dots {
       margin-left: 595px;
       cursor: pointer; }
 
-.horiz-content-block {
+.horiz-block {
   width: 820px;
-  height: 165px;
+  min-height: 165px;
   margin: 35px 0 20px 0;
   border: 1px solid #dddddd;
   border-radius: 5px; }
-  .horiz-content-block .image {
+  .horiz-block .image {
     float: left;
     position: relative;
     width: 260px;
     height: 165px;
     margin: 0; }
-    .horiz-content-block .image img {
+    .horiz-block .image img {
       position: absolute;
       display: inline-block;
-      width: 260px;
+      width: 100%;
       height: 165px;
       z-index: 0; }
-    .horiz-content-block .image .sign {
+    .horiz-block .image .sign {
       position: absolute;
       top: 140px;
       left: 20px;
       font-family: 'Montserrat-Regular';
       font-size: 16px;
       color: #fff; }
-    .horiz-content-block .image .comments,
-    .horiz-content-block .image .likes {
+    .horiz-block .image .comments,
+    .horiz-block .image .likes {
       position: absolute;
       bottom: 10px;
       right: 20px;
@@ -285,47 +292,252 @@ header {
       font-family: 'Montserrat-Regular';
       font-size: 12px;
       color: #fff; }
-      .horiz-content-block .image .comments .material-icons,
-      .horiz-content-block .image .likes .material-icons {
+      .horiz-block .image .comments .material-icons,
+      .horiz-block .image .likes .material-icons {
         position: absolute;
         bottom: 0;
         right: 15px;
         font-size: 14px; }
-    .horiz-content-block .image .comments {
+    .horiz-block .image .comments {
       margin-right: 50px; }
-  .horiz-content-block .description {
+  .horiz-block .description {
     float: right;
     width: 560px;
     height: 100%; }
-    .horiz-content-block .description h3 {
+    .horiz-block .description h3 {
       margin-left: 20px;
       font-family: 'Montserrat-Bold';
       font-size: 18px;
-      margin: 5px 0 0 20px; }
-    .horiz-content-block .description p {
+      margin: 5px 5px 0 20px; }
+    .horiz-block .description p {
       margin-left: 20px;
       font-family: 'Open Sans';
-      color: #777; }
-    .horiz-content-block .description .info {
+      color: #777;
+      height: 22.4px;
+      font-size: 16px;
+      line-height: 1.4;
+      -webkit-line-clamp: 1;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis; }
+    .horiz-block .description .info {
       width: 100%;
-      height: 50px;
+      min-height: 50px;
       padding-top: 10px;
       border-top: 1px solid #dddddd; }
-      .horiz-content-block .description .info .avatar {
+      .horiz-block .description .info .avatar {
         float: left;
         width: 50px;
         height: 50px;
         margin: 0 5px 0 15px;
         border-radius: 25px; }
-      .horiz-content-block .description .info .name {
+      .horiz-block .description .info .name {
         display: block;
         font-family: 'Montserrat-Regular';
         font-size: 14px;
         color: #000; }
-      .horiz-content-block .description .info .date {
+      .horiz-block .description .info .date {
         font-family: 'Montserrat-Regular';
         font-size: 12px;
         color: #777; }
-      .horiz-content-block .description .info .dots {
+      .horiz-block .description .info .dots {
         margin-left: 335px;
         cursor: pointer; }
+
+.vert-block {
+  float: left;
+  width: 260px;
+  height: 430px;
+  border: 1px solid #dddddd;
+  border-radius: 5px; }
+  .vert-block:nth-child(6), .vert-block:nth-child(7) {
+    margin-left: 18px; }
+  .vert-block .image {
+    position: relative;
+    width: 100%;
+    height: 175px;
+    margin: 0; }
+    .vert-block .image img {
+      position: absolute;
+      display: inline-block;
+      width: 100%;
+      height: 100%;
+      z-index: 0; }
+    .vert-block .image .sign {
+      position: absolute;
+      top: 150px;
+      left: 20px;
+      font-family: 'Montserrat-Regular';
+      font-size: 16px;
+      color: #fff; }
+    .vert-block .image .comments,
+    .vert-block .image .likes {
+      position: absolute;
+      bottom: 10px;
+      right: 20px;
+      display: inline-block;
+      margin-top: 35px;
+      font-family: 'Montserrat-Regular';
+      font-size: 12px;
+      color: #fff; }
+      .vert-block .image .comments .material-icons,
+      .vert-block .image .likes .material-icons {
+        position: absolute;
+        bottom: 0;
+        right: 20px;
+        font-size: 14px; }
+    .vert-block .image .comments {
+      margin-right: 50px; }
+  .vert-block .description {
+    width: 100%;
+    height: 175px; }
+    .vert-block .description h3 {
+      margin-left: 20px;
+      font-family: 'Montserrat-Bold';
+      font-size: 18px;
+      padding-right: 5px; }
+    .vert-block .description p {
+      margin-left: 20px;
+      font-family: 'Open Sans';
+      color: #777;
+      height: 67.2px;
+      font-size: 16px;
+      line-height: 1.4;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis; }
+  .vert-block .info {
+    width: 100%;
+    min-height: 50px;
+    padding-top: 10px;
+    border-top: 1px solid #dddddd; }
+    .vert-block .info .avatar {
+      float: left;
+      width: 50px;
+      height: 50px;
+      margin: 0 5px 0 15px;
+      border-radius: 25px; }
+    .vert-block .info .name {
+      display: block;
+      font-family: 'Montserrat-Regular';
+      font-size: 14px;
+      color: #000; }
+    .vert-block .info .date {
+      font-family: 'Montserrat-Regular';
+      font-size: 12px;
+      color: #777; }
+    .vert-block .info .dots {
+      margin-left: 40px;
+      cursor: pointer; }
+
+.big-vert-block {
+  float: left;
+  width: 400px;
+  min-height: 540px;
+  margin-top: 20px;
+  border: 1px solid #dddddd;
+  border-radius: 5px; }
+  .big-vert-block:nth-child(8) {
+    margin-right: 20px; }
+  .big-vert-block .image {
+    position: relative;
+    width: 400px;
+    height: 300px;
+    margin: 0; }
+    .big-vert-block .image img {
+      position: absolute;
+      display: inline-block;
+      width: 100%;
+      height: 100%;
+      z-index: 0; }
+    .big-vert-block .image .sign {
+      position: absolute;
+      top: 270px;
+      left: 20px;
+      font-family: 'Montserrat-Regular';
+      font-size: 16px;
+      color: #fff; }
+    .big-vert-block .image .comments,
+    .big-vert-block .image .likes {
+      position: absolute;
+      bottom: 10px;
+      right: 20px;
+      display: inline-block;
+      margin-top: 35px;
+      font-family: 'Montserrat-Regular';
+      font-size: 12px;
+      color: #fff; }
+      .big-vert-block .image .comments .material-icons,
+      .big-vert-block .image .likes .material-icons {
+        position: absolute;
+        bottom: 0;
+        right: 20px;
+        font-size: 14px; }
+    .big-vert-block .image .comments {
+      margin-right: 50px; }
+  .big-vert-block .description {
+    width: 400px;
+    min-height: 140px; }
+    .big-vert-block .description h3 {
+      margin-left: 20px;
+      font-family: 'Montserrat-Bold';
+      font-size: 18px; }
+    .big-vert-block .description p {
+      margin-left: 20px;
+      font-family: 'Open Sans';
+      color: #777;
+      height: 112px;
+      font-size: 16px;
+      line-height: 1.4;
+      -webkit-line-clamp: 5;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis; }
+    .big-vert-block .description .info {
+      width: 100%;
+      min-height: 50px;
+      padding-top: 10px;
+      border-top: 1px solid #dddddd; }
+      .big-vert-block .description .info .avatar {
+        float: left;
+        width: 50px;
+        height: 50px;
+        margin: 0 5px 0 15px;
+        border-radius: 25px; }
+      .big-vert-block .description .info .name {
+        display: block;
+        font-family: 'Montserrat-Regular';
+        font-size: 14px;
+        color: #000; }
+      .big-vert-block .description .info .date {
+        font-family: 'Montserrat-Regular';
+        font-size: 12px;
+        color: #777; }
+      .big-vert-block .description .info .dots {
+        margin-left: 170px;
+        cursor: pointer; }
+
+.next-btn-wrap {
+  float: right;
+  margin-top: 30px;
+  margin-right: 345px; }
+  .next-btn-wrap a {
+    font-family: 'Montserrat-Regular';
+    font-size: 16px;
+    color: #303f9f; }
+  .next-btn-wrap .next-btn {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+    line-height: 20px;
+    background-color: #fff;
+    border-top: 1px solid #dddddd;
+    border-bottom: 1px solid #777;
+    border-radius: 25px;
+    text-align: center;
+    vertical-align: middle; }
+    .next-btn-wrap .next-btn i {
+      font-size: 22px;
+      line-height: 28px; }
