@@ -277,6 +277,8 @@ header
       color: #3f51b5
 
 .main-content
+  float: left
+  width: 825px
   &:after
     content: "."
     display: block
@@ -353,7 +355,7 @@ header
 
 .horiz-block
   width: 820px
-  min-height: 165px
+  height: 165px
   margin: 35px 0 20px 0
   border: 1px solid #dddddd
   border-radius: 5px
@@ -396,9 +398,10 @@ header
       margin-right: 50px
 
   .description
+    position: relative
     float: right
     width: 560px
-    height: 100%
+    min-height: 100%
 
     h3
       @include content-descr-h3
@@ -415,8 +418,10 @@ header
       text-overflow: ellipsis
 
     .info
+      position: absolute
+      top: 55%
       width: 100%
-      min-height: 50px
+      height: 60px
       padding-top: 10px
       border-top: 1px solid #dddddd
 
@@ -436,7 +441,7 @@ header
 .vert-block
   float: left
   width: 260px
-  height: 430px
+  height: 420px
   border: 1px solid #dddddd
   border-radius: 5px
 
@@ -483,7 +488,6 @@ header
 
   .description
     width: 100%
-    height: 175px
 
     h3
       @include content-descr-h3
@@ -499,24 +503,24 @@ header
       overflow: hidden
       text-overflow: ellipsis
 
-  .info
-    width: 100%
-    min-height: 50px
-    padding-top: 10px
-    border-top: 1px solid #dddddd
+    .info
+      width: 100%
+      height: 100%
+      padding-top: 10px
+      border-top: 1px solid #dddddd
 
-    .avatar
-      @include content-descr-avatar
+      .avatar
+        @include content-descr-avatar
 
-    .name
-      @include content-descr-name
+      .name
+        @include content-descr-name
 
-    .date
-      @include content-descr-date
+      .date
+        @include content-descr-date
 
-    .dots
-      margin-left: 40px
-      cursor: pointer
+      .dots
+        margin-left: 40px
+        cursor: pointer
 
 .big-vert-block
   float: left
@@ -628,3 +632,34 @@ header
     i
       font-size: 22px
       line-height: 28px
+.side-content
+  float: right
+  width: 275px
+  margin: 35px 0 0 70px
+
+  .search
+    position: relative
+
+    input
+      width: 220px
+      padding-right: 20px
+      border: 1px solid mistyrose
+
+      &:focus
+        outline: none
+
+    .search-btn
+      position: absolute
+      right: 0
+      bottom: -11px
+      display: inline-block
+      width: 36px
+      height: 36px
+      border: 5px solid rgba(0, 0, 0, .1)
+      border-radius: 25px
+
+      i
+        padding: 6px
+        color: #fff
+        border-radius: 25px
+        background-color: #ff4081
