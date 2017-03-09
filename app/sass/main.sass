@@ -781,3 +781,76 @@ header
     .fa-dribbble
       background-color: #ea4c89
       margin-right: 0
+.post-widget
+  h3
+    margin-top: 50px
+
+  .r-post
+    display: inline-block
+    margin-right: -5px
+    padding: 15px 23px
+    border-radius: 5px
+    border-top-right-radius: 0
+    border-bottom-right-radius: 0px
+
+    background-color: $main-blue
+
+  .active
+    display: inline-block
+    padding: 14px 24px
+    color: $main-blue
+    background-color: #fff
+    border: 1px solid $main-blue
+    border-radius: 5px
+    border-top-left-radius: 0
+    border-bottom-left-radius: 0px
+
+  .side-news-item
+    padding: 20px 0
+    border-bottom: 1px solid #eee
+
+    &:after
+      content: "."
+      display: block
+      height: 0
+      clear: both
+      visibility: hidden
+
+    &:last-child
+      border: none
+
+    img
+      float: left
+
+    .side-info
+      position: relative
+      float: right
+      width: 165px
+      padding-left: 10px
+      font:
+        family: 'Open Sans'
+
+      .date
+        display: inline-block
+
+      p
+        display: inline-block
+        font-weight: 800
+
+      .comments
+        position: absolute
+        top: 0
+        right: 0
+        font-size: 14px
+        i
+          font-size: 14px
+          color: $main-blue
+
+.tags
+  .tag
+    display: inline-block
+    padding: 10px 15px
+    margin: 5px 5px 5px 0
+    background-color: #eee
+    border-radius: 5px
+
