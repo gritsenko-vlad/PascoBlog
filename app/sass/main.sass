@@ -68,6 +68,8 @@ a:active
 
 ul
  padding: 0
+ margin: 0
+
 li
   list-style-type: none
 
@@ -902,7 +904,7 @@ header
       border: none
       border-radius: 25px
       color: #fff
-      background-color: rgba(255,255,255, .2)
+      background-color: rgba(117,117,117, .2)
       outline: none
 
     .subscribe-btn
@@ -1028,7 +1030,7 @@ footer
   .news-letter
     float: left
     display: inline-block
-    width: 275px
+    width: 290px
 
     .widget-name
       @include widget-name
@@ -1055,7 +1057,7 @@ footer
     .subscribe-btn
       display: inline-block
       margin-top: 5px
-      padding: 15px 110px 15px 110px
+      padding: 15px 117px 15px 117px
       background-color: #303030
       border-radius: 5px
       font:
@@ -1065,7 +1067,75 @@ footer
       letter-spacing: 2px
       text-transform: uppercase
 
+.nav-bottom
+  min-width: 1170px
+  height: 80px
+  background-color: #303030
+
+  ul
+    float: left
+    padding-top: 30px
+
+    li
+      display: inline-block
+      margin-right: 40px
+      font:
+        family: 'Montserrat-Bold'
+        size: 12px
+
+      &:last-child
+        margin-right: 0
       
+  .bottom-search
+    float: left
+    position: relative
+    display: inline-block
+    margin: 25px 0 0 175px
+
+    input
+      display: inline-block
+      padding: 5px 10px
+      border: none
+      border: 1px solid $footer-dark-grey
+      border-radius: 25px
+      background-color: rgba(0,0,0,0)
+      font:
+        family: 'Montserrat-Light'
+        size: 14px
+
+    i
+      position: absolute
+      top: 5px
+      right: 7px
+      font-size: 18px
+      color: $footer-dark-grey
+  .bottom-lang
+    float: left
+    display: inline-block
+    position: relative
+    width: 65px
+    height: 25px
+    margin: 27px 0 0 150px
+    color: $footer-dark-grey
+
+    span
+      display: inline-block
+      margin: 6px 0 0 18px
+      font:
+        family: 'Montserrat-Regular'
+        size: 12px
+      text-transform: uppercase
+
+    .lang-ico
+      position: absolute
+      top: 5px
+      left: 0
+      font-size: 14px
+
+    .arrow-down
+      position: absolute
+      top: 1px
+      right: 0
 
 
 
