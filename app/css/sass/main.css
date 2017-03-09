@@ -120,8 +120,9 @@ header {
       padding: 10px 20px 10px 20px;
       font-family: 'Montserrat-Regular';
       font-size: 20px;
+      font-weight: normal;
       border-radius: 25px;
-      background-color: #303f9f; }
+      background-color: #3f51b5; }
   header .info {
     text-align: center; }
     header .info .avatar {
@@ -556,7 +557,7 @@ header {
     .side-content .search input {
       width: 220px;
       padding-right: 20px;
-      border: 1px solid mistyrose; }
+      border: none; }
       .side-content .search input:focus {
         outline: none; }
     .side-content .search .search-btn {
@@ -573,3 +574,113 @@ header {
         color: #fff;
         border-radius: 25px;
         background-color: #ff4081; }
+
+.categories h3 {
+  margin: 30px 0 0 0;
+  padding-bottom: 10px;
+  color: #3f51b5;
+  border-bottom: 1px solid #aec3ff;
+  text-transform: uppercase; }
+
+.categories table {
+  width: 100%;
+  border-collapse: collapse; }
+  .categories table tr {
+    border-bottom: 1px solid #ebeae9; }
+    .categories table tr:last-child {
+      border: none; }
+    .categories table tr th {
+      padding: 15px 0 15px 0;
+      font-family: 'Open Sans';
+      font-size: 14px;
+      font-weight: normal; }
+
+.categories .left {
+  float: left; }
+
+.categories .right {
+  float: right;
+  font-weight: 600; }
+
+.subscribe h3 {
+  color: #3f51b5;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #aec3ff;
+  text-transform: uppercase; }
+
+.subscribe .name {
+  display: block;
+  margin-bottom: 10px;
+  font-family: 'Open Sans';
+  font-size: 16px; }
+
+.subscribe .email {
+  display: block;
+  margin: 10px 0 10px 0; }
+
+.subscribe .input-name,
+.subscribe .input-email {
+  width: 263px;
+  border: none;
+  border: solid 1px #ccc;
+  border-radius: 5px;
+  padding: 10px 0 10px 10px; }
+
+.subscribe .subscribe-btn {
+  display: block;
+  margin-top: 10px;
+  padding: 15px 82px 15px 82px;
+  background-color: #3f51b5;
+  border-radius: 5px;
+  font-family: "Montserrat-Light";
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  text-transform: uppercase; }
+
+.subscribe .broken-line {
+  position: relative;
+  display: inline-block;
+  margin: 20px 0 0 130px;
+  font-family: 'Open Sans';
+  font-size: 16px; }
+  .subscribe .broken-line:before, .subscribe .broken-line:after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    height: 1px;
+    width: 120px;
+    background-color: #777; }
+  .subscribe .broken-line:before {
+    left: 25px; }
+  .subscribe .broken-line:after {
+    right: 25px; }
+
+.subscribe .social-icons .fa {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  margin: 20px 8px 0 0;
+  color: #fff;
+  border-radius: 25px;
+  text-align: center;
+  line-height: 35px; }
+
+.subscribe .social-icons .fa-facebook {
+  background-color: #3b5999; }
+
+.subscribe .social-icons .fa-twitter {
+  background-color: #55acee; }
+
+.subscribe .social-icons .fa-vk {
+  background-color: #4c75a3; }
+
+.subscribe .social-icons .fa-pinterest-p {
+  background-color: #ff2e56; }
+
+.subscribe .social-icons .fa-tumblr {
+  background-color: #34465d; }
+
+.subscribe .social-icons .fa-dribbble {
+  background-color: #ea4c89;
+  margin-right: 0; }

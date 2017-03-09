@@ -1,4 +1,5 @@
 $grey: #777
+$main-blue: #3f51b5
 @mixin content-descr-h3
   margin-left: 20px
   font:
@@ -61,8 +62,6 @@ li
 .container
   width: 1170px
   margin: 0 auto
-
-
 
 
 .top
@@ -204,8 +203,9 @@ header
       font:
         family: 'Montserrat-Regular'
         size: 20px
+        weight: normal
       border-radius: 25px
-      background-color: #303f9f
+      background-color: $main-blue
 
   .info
     text-align: center
@@ -643,7 +643,7 @@ header
     input
       width: 220px
       padding-right: 20px
-      border: 1px solid mistyrose
+      border: none
 
       &:focus
         outline: none
@@ -663,3 +663,121 @@ header
         color: #fff
         border-radius: 25px
         background-color: #ff4081
+
+.categories
+  h3
+    margin: 30px 0 0 0
+    padding-bottom: 10px
+    color: $main-blue
+    border-bottom: 1px solid #aec3ff
+    text-transform: uppercase
+
+  table
+    width: 100%
+    border-collapse: collapse
+
+    tr
+      border-bottom: 1px solid #ebeae9
+
+      &:last-child
+        border: none
+
+      th
+        padding: 15px 0 15px 0
+        font:
+          family: 'Open Sans'
+          size: 14px
+          weight: normal
+
+  .left
+    float: left
+
+  .right
+    float: right
+    font-weight: 600
+
+.subscribe
+  h3
+    color: $main-blue
+    padding-bottom: 10px
+    border-bottom: 1px solid #aec3ff
+    text-transform: uppercase
+
+  .name
+    display: block
+    margin-bottom: 10px
+    font:
+      family: 'Open Sans'
+      size: 16px
+
+  .email
+    display: block
+    margin: 10px 0 10px 0
+
+  .input-name,
+  .input-email
+    width: 263px
+    border: none
+    border: solid 1px #ccc
+    border-radius: 5px
+    padding: 10px 0 10px 10px
+
+  .subscribe-btn
+    display: block
+    margin-top: 10px
+    padding: 15px 82px 15px 82px
+    background-color: $main-blue
+    border-radius: 5px
+    font:
+      family: "Montserrat-Light"
+      size: 16px
+      weight: 400
+    letter-spacing: 2px
+    text-transform: uppercase
+  
+  .broken-line
+    position: relative
+    display: inline-block
+    margin: 20px 0 0 130px
+    font:
+      family: 'Open Sans'
+      size: 16px
+
+    &:before,
+    &:after
+      content: ""
+      position: absolute
+      top: 10px
+      height: 1px
+      width: 120px
+      background-color: $grey
+    &:before
+
+      left: 25px
+    &:after
+      right: 25px
+
+  .social-icons
+    .fa
+      display: inline-block
+      width: 35px
+      height: 35px
+      margin: 20px 8px 0 0
+      color: #fff
+      border-radius: 25px
+      text-align: center
+      line-height: 35px
+
+    .fa-facebook
+      background-color: #3b5999
+    .fa-twitter
+      background-color: #55acee
+    .fa-vk
+      background-color: #4c75a3
+    .fa-pinterest-p
+      background-color: #ff2e56
+    .fa-tumblr
+      background-color: #34465d
+    .fa-dribbble
+      background-color: #ea4c89
+      margin-right: 0
