@@ -964,13 +964,16 @@ footer {
     margin: 25px 0 0 175px; }
     .nav-bottom .bottom-search input {
       display: inline-block;
-      padding: 5px 10px;
+      width: 150px;
+      padding: 5px 25px 5px 10px;
       border: none;
       border: 1px solid #757575;
       border-radius: 25px;
+      color: #cecece;
       background-color: transparent;
       font-family: 'Montserrat-Light';
-      font-size: 14px; }
+      font-size: 14px;
+      outline: none; }
     .nav-bottom .bottom-search i {
       position: absolute;
       top: 5px;
