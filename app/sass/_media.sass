@@ -1,5 +1,7 @@
 @media screen and (max-width: 360px)
 
+  $centered-block-width: 350px
+
   .top
     min-width: 360px
     .container
@@ -94,27 +96,162 @@
         a:nth-child(2)
           display: none
 
-
   .menu-blog
+    min-width: 360px
     margin-top: 10px
+    margin-bottom: 10px
     padding-bottom: 10px
 
-    .sort-menu
-      display: none
+    .container
+      width: 360px
+      margin: 0
 
-    .mobile-sort-menu
-      display: block
-      width: 250px
-      height: 45px
-      margin-left: 50px
-      padding-left: 10px
-      background-color: #fff
-      background: url(../../img/arrow-up-down.png) no-repeat right center
-      -webkit-appearance: none
-      border: none
-      border: 1px solid #cecece
-      border-radius: 5px
-      outline: none
-      font:
-        family: 'Open Sans'
-        size: 14px
+
+      .sort-menu
+        display: none
+
+      .mobile-sort-menu
+        display: block
+        width: 250px
+        height: 45px
+        margin-left: 50px
+        padding-left: 10px
+        background-color: #fff
+        background: url(../../img/arrow-up-down.png) no-repeat right center
+        -webkit-appearance: none
+        border: none
+        border: 1px solid #cecece
+        border-radius: 5px
+        outline: none
+        font:
+          family: 'Open Sans'
+          size: 14px
+
+  .container
+    width: 360px
+
+    .main-content
+      width: 360px
+
+      .video-block
+        width: 350px
+        height: 440px
+        margin: 0 auto
+        border-top: none
+
+        .image
+          position: relative
+          width: 350px
+          height: 185px
+
+          img
+            width: 350px
+
+          .play
+            position: absolute
+            top: 70px
+            left: 155px
+
+        .description
+
+          h3,
+          p
+            margin-left: 5px
+
+          .info
+            position: relative
+
+            .dots
+              position: absolute
+              top: 40%
+              right: 0
+              margin-left: 0
+
+      .horiz-block
+        width: $centered-block-width
+        height: 180px
+        margin: 10px auto
+
+        .image
+
+          width: 170px
+          height: 180px
+          margin-top: 0
+
+          img
+            width: 170px
+            height: 180px
+
+          .sign
+            position: absolute
+            top: 135px
+            left: 65px
+
+
+        .description
+          width: 180px
+
+          h3,
+          p
+            display: inline-block
+            margin-left: 10px
+
+          p
+            margin: 5px 0 0 10px
+
+          .info
+
+            .avatar
+              margin-left: 5px
+
+            .dots
+              display: none
+              // position: absolute
+              // top: 60%
+              // right: 0
+              // margin-left: 0
+
+      .vert-block
+        float: none
+        width: $centered-block-width
+        height: 100%
+        margin: 10px auto
+
+        .description
+          .info
+            position: relative
+            height: 50px
+
+            .dots
+              position: absolute
+              top: 35%
+              right: 5px
+              margin-left: 0
+
+      .big-vert-block
+        float: none
+        width: $centered-block-width
+        margin: 10px auto
+
+        .image
+          width: $centered-block-width
+
+        img
+          width: $centered-block-width
+
+        .description
+          width: 350px
+
+          h3,
+          p
+            display: inline-block
+            margin-left: 5px
+
+          .info
+            position: relative
+
+            .dots
+              position: absolute
+              top: 35%
+              right: 5px
+              margin-left: 0
