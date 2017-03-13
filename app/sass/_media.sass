@@ -1,6 +1,7 @@
 @media screen and (max-width: 360px)
 
   .top
+    min-width: 360px
     .container
       width: 360px
       height: 100%
@@ -20,13 +21,14 @@
         display: none
 
   header
+    min-width: 360px
     height: 70px
     background: none
     background-color: #3f51b5
 
     .container
       position: relative
-      width: 360px
+      max-width: 360px
       height: 70px
 
       .logo
@@ -91,3 +93,28 @@
         a:nth-child(1),
         a:nth-child(2)
           display: none
+
+
+  .menu-blog
+    margin-top: 10px
+    padding-bottom: 10px
+
+    .sort-menu
+      display: none
+
+    .mobile-sort-menu
+      display: block
+      width: 250px
+      height: 45px
+      margin-left: 50px
+      padding-left: 10px
+      background-color: #fff
+      background: url(../../img/arrow-up-down.png) no-repeat right center
+      -webkit-appearance: none
+      border: none
+      border: 1px solid #cecece
+      border-radius: 5px
+      outline: none
+      font:
+        family: 'Open Sans'
+        size: 14px
