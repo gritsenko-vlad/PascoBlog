@@ -1,3 +1,3 @@
 # PascoBlog
 
-[Demo](https://gritsenko-vlad.github.io/PascoBlog/app)
+[Demo](https://vlad-gritsenko.github.io/PascoBlog/app)
