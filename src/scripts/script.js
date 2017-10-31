@@ -1,9 +1,4 @@
-
 $(document).ready(function () {
-
-  $('.mobile-menu-icon').click(function() {
-    $('.top-menu').toggle()
-  });
 
   $('.left-post').click(function(){
     $('.left-post').addClass('active')
@@ -13,6 +8,11 @@ $(document).ready(function () {
   $('.right-post').click(function(){
     $('.right-post').addClass('active')
     $('.left-post').removeClass('active')
+  });
+
+  $('.hamburger').click(function(){
+    $('.hamburger').toggleClass('active-hamburger-icon');
+    $('nav').toggleClass('active-nav');
   });
 
 });

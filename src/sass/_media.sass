@@ -1,313 +1,137 @@
-@media screen and (max-width: 360px)
+@media screen and (max-width: 1150px)
+  main .container
+    .left-content
+      margin: 0 auto
 
-  $centered-block-width: 350px
-
-  .top
-    min-width: 360px
-    .container
-      width: 360px
-      height: 100%
-      margin: 0
-      background-color: #303f9f
-
-      .lang
-        float: left
-        margin-left: 10px
-
-      .sign-in
-        float: right
-        margin-right: 10px
-        border-right: none
-
-      .social
+      .video-content-block
         display: none
 
-  header
-    min-width: 360px
-    height: 70px
-    background: none
-    background-color: #3f51b5
-
-    .container
-      position: relative
-      max-width: 360px
-      height: 70px
-
-      .logo
-        margin-left: 140px
-
-      nav
-        position: absolute
-        top: 20px
-        left: 10px
-        margin: 0
-
-        .mobile-menu-icon
-          display: inline-block
-
-        ul
-          display: none
-          position: relative
-          width: 210px
-          height: 370px
-          margin-top: 20px
-          margin-left: -10px
-          background-color: #3f51b5
-          z-index: 2
-
-          &:active
-            border-top: none
-
-          li
-            display: inline-block
-            margin: 15px 25px 10px 25px
-
-            &:hover
-              padding: 0
-              border-bottom: 0
-              margin-right: 0
-
-            a
-              font-size: 24px
-
-              &:hover
-                padding-right: 10px
-                border-right: 5px solid #ff4081
-
-              i
-                display: none
-
-
-
-      article
-        display: none
-
-      .info
-        display: none
-
-      #my-menu
-        display: inline-block
-        height: 100px
-
-      .nav-icons
-        width: 25px
-        margin-right: 15px
-        a:nth-child(1),
-        a:nth-child(2)
-          display: none
-
-  .sort-blog
-    min-width: 360px
-    margin-top: 10px
-    margin-bottom: 10px
-    padding-bottom: 10px
-
-    .container
-      width: 360px
-      margin: 0
-
-
-      .sort-menu
-        display: none
-
-      .mobile-sort-blog
-        display: block
-        width: 250px
-        height: 45px
-        margin-left: 50px
-        padding-left: 10px
-        background-color: #fff
-        background: url(../../img/arrow-up-down.png) no-repeat right center
-        -webkit-appearance: none
-        border: none
-        border: 1px solid #cecece
-        border-radius: 5px
-        outline: none
-        font:
-          family: 'Open Sans'
-          size: 14px
-
-  .container
-    width: 360px
-
-    .main-content
-      width: 360px
-
-      .video-block
-        width: 350px
-        height: 440px
-        margin: 0 auto
-        border-top: none
-
-        .image
-          position: relative
-          width: 350px
-          height: 185px
-
-          img
-            width: 350px
-
-          .play
-            position: absolute
-            top: 70px
-            left: 155px
-
-        .description
-
-          h3,
-          p
-            margin-left: 5px
-
-          .info
-            position: relative
-
-            .dots
-              position: absolute
-              top: 40%
-              right: 0
-              margin-left: 0
-
-      .horiz-block
-        width: $centered-block-width
-        height: 180px
-        margin: 10px auto
-
-        .image
-
-          width: 170px
-          height: 180px
-          margin-top: 0
-
-          img
-            width: 170px
-            height: 180px
-
-          .sign
-            position: absolute
-            top: 135px
-            left: 65px
-
-
-        .description
-          width: 180px
-
-          h3,
-          p
-            display: inline-block
-            margin-left: 10px
-
-          p
-            margin: 5px 0 0 10px
-
-          .info
-
-            .avatar
-              margin-left: 5px
-
-            .dots
-              display: none
-              // position: absolute
-              // top: 60%
-              // right: 0
-              // margin-left: 0
-
-      .vert-block
-        float: none
-        width: $centered-block-width
-        height: 100%
-        margin: 10px auto
-
-        .description
-          .info
-            position: relative
-            height: 50px
-
-            .dots
-              position: absolute
-              top: 35%
-              right: 5px
-              margin-left: 0
-
-      .big-vert-block
-        float: none
-        width: $centered-block-width
-        margin: 10px auto
-
-        .image
-          width: $centered-block-width
-
-        img
-          width: $centered-block-width
-
-        .description
-          width: 350px
-
-          h3,
-          p
-            display: inline-block
-            margin-left: 5px
-
-          .info
-            position: relative
-
-            .dots
-              position: absolute
-              top: 35%
-              right: 5px
-              margin-left: 0
-
-    .side-content
-      float: right
-      margin: 20px 40px 0 0
-
-      .search
-        display: none
-
-      .subscribe
-        display: none
-
-    .next-btn-wrap
+    .right-content
       display: none
 
+  .bottom-subscribe .container h1
+    font-size: 36px
+
+
+@media screen and (max-width: 1050px)
+  header
+    .header-navigation
+      .mobile-menu
+        position: relative
+        width: 70px
+
+      .active-hamburger-icon
+        transform: translateY(5px)
+
+        span:first-child
+          transform: rotate(45deg) translateY(2px) translateX(2px)
+        span:nth-child(2)
+          display: none
+        span:nth-child(3)
+          transform: rotate(-45deg)
+
+      .hamburger
+        position: relative
+        display: flex
+        order: 1
+        z-index: 1
+
+      .logo
+        order: 2
+
+      .active-nav
+        display: flex
+
+      nav
+        display: none
+        flex-direction: column
+        align-items: flex-start
+        flex-wrap: wrap
+        position: absolute
+        top: -25px
+        left: -10px
+        width: 100vw
+        padding: 50px 0 20px 10px
+        background-color: rgba($footer-dark-grey, .9)
+        z-index: 0
+
+        a
+          margin-top: 20px
+
+          &:hover
+            border-bottom: none
+            padding-bottom: 0
+
+      .nav-icons
+        order: 3
+
+    .header-title h1
+      font-size: 36px
 
   .bottom-subscribe
-    display: none
-
-  footer
-    min-width: 350px
-
     .container
-      width: 300px
-      margin-left: 50px
+      display: flex
+      flex-direction: column
+      align-items: flex-start
 
-      .pages-widget
-        display: none
+      input
+        margin: 20px 0
 
-      .twitter-widget
+  .nav-bottom .container
+    ul
+      display: none
 
-        .widget-name
-          display: none
-
-        .twitter-post
-          display: none
-
-      .news-letter
-        display: none
-
-      .social-widget
-        display: none
-
-      .social-icons
-        .fa
-          margin: 20px 12px 0 0
-
-          &:nth-child(6)
-            margin-right: 0
-
-    .all-rights-reserved
-      display: inline-block
-      margin: 50px 0 0 50px
-      color: #cecece
-
-  .nav-bottom
+@media screen and (max-width: 768px)
+  .sort-items
     display: none
+
+  .mobile-sort-menu
+    display: block
+    width: 100%
+    height: 45px
+    margin: 0 auto
+    padding-left: 10px
+    background-color: #fff
+    background: url(../img/arrow-up-down.png) no-repeat right center
+    appearance: none
+    border: none
+    border: 1px solid #cecece
+    border-radius: 5px
+    outline: none
+    font-size: 14px
+
+  main .container
+    .left-content
+      display: flex
+      justify-content: space-between
+      flex-wrap: wrap
+
+    .long-content-wrapper
+      display: flex
+      justify-content: space-around
+      flex-wrap: wrap
+
+      .long-content-block
+        max-width: 260px
+
+        .description
+          display: none
+
+    .square-content-wrapper
+      display: flex
+      justify-content: space-around
+      flex-wrap: wrap
+
+      .square-content-block
+        margin: 10px
+
+    .big-content-wrapper
+      display: flex
+      justify-content: space-around
+      flex-wrap: wrap
+
+  .bottom-subscribe .container h1
+    font-size: 32px
+
+  footer .container
+    justify-content: center
